@@ -1,5 +1,24 @@
+// utils
 @import './utils/vars';
 @import './utils/hidden';
+
+// base
+@import './base/common';
 @import './base/reset';
-@import './layout/header';
+
+// components
+@import './components/section';
 @import './components/container';
+@import './components/modal';
+
+// layout
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/directions';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/portfolio';
+@import './layout/filters';
+@import './layout/projects';
