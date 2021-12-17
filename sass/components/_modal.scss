@@ -10,6 +10,12 @@
   transition-duration: 500ms;
   transition-timing-function: linear;
   transition-delay: 0;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: rotate(180deg);
+  }
 }
 .modal {
   position: absolute;
@@ -38,18 +44,13 @@
   justify-content: center;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: var(--accent-color);
+  }
 }
-.modal-close-btn:hover {
-  color: var(--accent-color);
-}
+
 .modal-icon {
   fill: currentColor;
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transform: rotate(180deg);
 }
 
 .modal-title {
@@ -65,6 +66,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  &:last-of-type {
+    margin-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 .modal-label {
   font-size: 12px;
@@ -84,12 +90,12 @@
   border-radius: 4px;
   padding-left: 42px;
   outline: none;
+  &:focus {
+    border: 1px solid var(--accent-color);
+    outline: none;
+  }
 }
-.modal-input:focus,
-.modal-text:focus {
-  border: 1px solid var(--accent-color);
-  outline: none;
-}
+
 .modal-icon-input {
   position: absolute;
   top: 50%;
@@ -109,6 +115,10 @@
   display: block;
   padding: 12px 16px;
   margin-bottom: 20px;
+  &:focus {
+    border: 1px solid var(--accent-color);
+    outline: none;
+  }
 }
 placeholder {
   font-size: 14px;
@@ -122,29 +132,26 @@ placeholder {
   color: var(--additional-text-color);
   display: flex;
   align-items: center;
+  span {
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    border: 1px solid var(--primary-text-color);
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+  }
 }
 .check-link {
   color: var(--accent-color);
   margin-left: 4px;
 }
-.check-text span {
-  width: 16px;
-  height: 15px;
-  border-radius: 2px;
-  border: 1px solid var(--primary-text-color);
-  display: flex;
-  align-items: center;
-  margin-right: 8px;
-}
+
 .modal-check:checked + .check-text span {
   background-color: var(--accent-color);
   border: none;
 }
-.modal-field:last-of-type {
-  margin-bottom: 30px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
+
 .modal-send-btn {
   display: block;
   min-width: 200px;
