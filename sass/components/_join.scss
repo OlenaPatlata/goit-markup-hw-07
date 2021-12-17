@@ -1,0 +1,13 @@
+.join {
+  padding-top: 12px;
+  padding-bottom: 40px;
+  margin-right: 93px;
+  &__text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--additional-accent-color);
+    margin-bottom: 20px;
+  }
+}

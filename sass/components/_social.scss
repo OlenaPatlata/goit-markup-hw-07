@@ -27,3 +27,7 @@
 .social__item:not(:last-child) {
   margin-right: 10px;
 }
+.social__link--dark {
+  background-color: var(--additional-icon-color-footer);
+  color: var(--additional-accent-color);
+}
