@@ -16,12 +16,7 @@ footer .container {
   width: 231px;
   flex-shrink: 0;
 }
-.footer .logo {
-  display: block;
-  font-family: 'Raleway', 'Sans Serif';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+.logo__footer {
   margin-bottom: 20px;
 }
 .footer-address-item:not(:last-child) {
