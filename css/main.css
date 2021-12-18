@@ -27,9 +27,15 @@
   clip: rect(0 0 0 0);
 }
 
-.primary-btn, .social, .social__link, .features-list__icon {
+.primary-btn, .social, .social__link, .header__container, .features-list__icon {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.nav-list, .features-list {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -85,9 +91,9 @@ svg {
 
 .logo {
   font-family: 'Raleway', 'Sans Serif';
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  font-weight: 700;
   display: block;
   margin-right: 93px;
 }
@@ -104,42 +110,29 @@ svg {
   color: var(--additional-accent-color);
 }
 
-.nav {
-  color: var(--primary-text-color);
-}
-
-.nav__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav__item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav__link {
+.nav-list__link {
   position: relative;
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  font-weight: 500;
   letter-spacing: 0.02em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: inherit;
 }
 
-.nav__link:hover, .nav__link:focus {
+.nav-list__link:hover, .nav-list__link:focus {
   color: var(--accent-color);
 }
 
-.nav__link--active {
+.nav-list__link--active {
   color: var(--accent-color);
 }
 
-.nav__link--current::after {
+.nav-list__link--current::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -517,12 +510,6 @@ placeholder {
   border-bottom: 1px solid var(--border-line-heder);
 }
 
-.header__container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 /* ---------------HERO----------------- */
 .hero {
   background-color: var(--futer-background-color);
@@ -558,9 +545,6 @@ placeholder {
 }
 
 .features-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 1170px;
 }
 

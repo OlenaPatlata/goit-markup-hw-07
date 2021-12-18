@@ -5,9 +5,7 @@
 }
 
 .features-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @extend %between-list;
   width: 1170px;
   &__item {
     width: 270px;
