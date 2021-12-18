@@ -3,24 +3,20 @@
   padding-top: 94px;
   padding-bottom: 94px;
   &__title {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
+    @include font(36px, 1.17, $fw: 700);
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
     margin-bottom: 50px;
   }
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1170px;
+}
+
+.clients-list {
+  width: 1170px;
+  @extend %between-list;
+  &__item:not(:last-child) {
+    margin-right: 30px;
   }
   &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %center-list;
     width: 170px;
     height: 92px;
     border: 1px solid var(--icon-color);
@@ -37,7 +33,4 @@
   &__ikon {
     fill: currentColor;
   }
-}
-.clients__item:not(:last-child) {
-  margin-right: 30px;
 }

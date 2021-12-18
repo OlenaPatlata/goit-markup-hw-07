@@ -27,13 +27,13 @@
   clip: rect(0 0 0 0);
 }
 
-.primary-btn, .social, .social__link, .header__container, .features-list__icon, .directions__text {
+.primary-btn, .social, .social__link, .header__container, .features-list__icon, .directions__text, .clients-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.nav-list, .contacts, .contacts__link, .features-list, .directions__list, .team-list {
+.nav-list, .contacts, .contacts__link, .features-list, .directions__list, .team-list, .clients-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -682,26 +682,22 @@ placeholder {
 }
 
 .clients__title {
-  font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
+  font-weight: 700;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
   margin-bottom: 50px;
 }
 
-.clients__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.clients-list {
   width: 1170px;
 }
 
-.clients__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.clients-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list__link {
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
@@ -710,17 +706,13 @@ placeholder {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover, .clients__link:focus {
+.clients-list__link:hover, .clients-list__link:focus {
   border-color: var(--additional-icon-color-hover);
   color: var(--accent-color);
 }
 
-.clients__ikon {
+.clients-list__ikon {
   fill: currentColor;
-}
-
-.clients__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 /* ---------------FOOTER----------------- */
