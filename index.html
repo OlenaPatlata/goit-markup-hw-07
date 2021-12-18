@@ -59,59 +59,67 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero__btn btn" data-modal-open>Заказать услугу</button>
+          <button type="button" class="primary-btn btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Секция наши особенности (features)-->
       <section class="features section">
         <div class="container">
-          <h2 class="features__title visually-hidden">Наши преимущества</h2>
-          <ul class="features__list list">
-            <li class="features__item-icon">
-              <svg width="70" height="70">
-                <use href="./images/sprite.svg#icon-antenna"></use>
-              </svg>
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <ul class="features-list list">
+            <li class="features-list__item">
+              <div class="features-list__icon">
+                <svg width="70" height="70">
+                  <use href="./images/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <div class="features-list__description">
+                <h3 class="features-list__title">Внимание к деталям</h3>
+                <p class="features-list__text">
+                  Идейные соображения, а также начало повседневной работы по формированию позиции.
+                </p>
+              </div>
             </li>
-            <li class="features__item-icon">
-              <svg width="70" height="70">
-                <use href="./images/sprite.svg#icon-clock"></use>
-              </svg>
+            <li class="features-list__item">
+              <div class="features-list__icon">
+                <svg width="70" height="70">
+                  <use href="./images/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <div class="features-list__description">
+                <h3 class="features-list__title">Пунктуальность</h3>
+                <p class="features-list__text">
+                  Задача организации, в особенности же рамки и место обучения кадров влечет за
+                  собой.
+                </p>
+              </div>
             </li>
-            <li class="features__item-icon">
-              <svg width="70" height="70">
-                <use href="./images/sprite.svg#icon-diagram"></use>
-              </svg>
+            <li class="features-list__item">
+              <div class="features-list__icon">
+                <svg width="70" height="70">
+                  <use href="./images/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <div class="features-list__description">
+                <h3 class="features-list__title">Планирование</h3>
+                <p class="features-list__text">
+                  Равным образом консультация с широким активом в значительной степени
+                  обуславливает.
+                </p>
+              </div>
             </li>
-            <li class="features__item-icon">
-              <svg width="70" height="70">
-                <use href="./images/sprite.svg#icon-astronaut"></use>
-              </svg>
-            </li>
-          </ul>
-          <ul class="features__list list">
-            <li class="features__item">
-              <h3 class="features__title">Внимание к деталям</h3>
-              <p class="features__text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
-              </p>
-            </li>
-            <li class="features__item">
-              <h3 class="features__title">Пунктуальность</h3>
-              <p class="features__text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-              </p>
-            </li>
-            <li class="features__item">
-              <h3 class="features__title">Планирование</h3>
-              <p class="features__text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
-              </p>
-            </li>
-            <li class="features__item">
-              <h3 class="features__title">Современные технологии</h3>
-              <p class="features__text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-              </p>
+            <li class="features-list__item">
+              <div class="features-list__icon">
+                <svg width="70" height="70">
+                  <use href="./images/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <div class="features-list__description">
+                <h3 class="features-list__title">Современные технологии</h3>
+                <p class="features-list__text">
+                  Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -550,7 +558,9 @@
                 id="user-email"
               />
             </div>
-            <button type="submit" class="subscribe__send-btn btn">Подписаться</button>
+            <button type="submit" class="primary-btn primary-btn--with-icon btn">
+              Подписаться
+            </button>
           </form>
         </div>
       </div>
@@ -558,12 +568,12 @@
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn btn" data-modal-close>
-          <svg class="modal-icon" width="18" height="18">
+        <button type="button" class="modal__close-btn btn" data-modal-close>
+          <svg class="modal__icon-close" width="18" height="18">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
         <form action="*" class="modal-form">
           <div class="modal-field">
             <label for="user-name" class="modal-label">Имя</label>
@@ -637,7 +647,7 @@
               <a href="" class="check-link">Условия договора</a></label
             >
           </div>
-          <button type="submit" class="modal-send-btn btn">Отправить</button>
+          <button type="submit" class="primary-btn btn">Отправить</button>
         </form>
       </div>
     </div>

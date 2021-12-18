@@ -1,6 +1,8 @@
 // utils
 @import './utils/vars';
 @import './utils/hidden';
+@import './utils/placeholders';
+@import './utils/mixin';
 
 // base
 @import './base/common';
@@ -12,6 +14,7 @@
 @import './components/logo';
 @import './components/nav';
 @import './components/contacts';
+@import './components/primary-btn';
 @import './components/modal';
 @import './components/social';
 @import './components/address';
