@@ -27,7 +27,7 @@
   clip: rect(0 0 0 0);
 }
 
-.primary-btn, .social, .social__link, .header__container, .features-list__icon, .directions__text, .clients-list__link, .filters {
+.primary-btn, .check-text, .check-text span, .social, .social__link, .header__container, .features-list__icon, .directions__text, .clients-list__link, .filters {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,10 +224,10 @@ svg {
 
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
   top: 50%;
   left: 50%;
+  width: 528px;
+  min-height: 581px;
   transform: translate(-50%, -50%);
   background: var(--additional-accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -260,9 +260,9 @@ svg {
 }
 
 .modal__title {
-  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  font-weight: 700;
   text-align: center;
   color: var(--primary-text-color);
   margin-bottom: 12px;
@@ -347,9 +347,8 @@ placeholder {
 .check-text {
   font-size: 14px;
   line-height: 1.71;
+  font-weight: 400;
   color: var(--additional-text-color);
-  display: flex;
-  align-items: center;
 }
 
 .check-text span {
@@ -357,8 +356,6 @@ placeholder {
   height: 15px;
   border-radius: 2px;
   border: 1px solid var(--primary-text-color);
-  display: flex;
-  align-items: center;
   margin-right: 8px;
 }
 
