@@ -11,9 +11,7 @@
     margin-right: 12px;
   }
   &__label {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 1.14, $fw: 700);
     display: block;
     margin-bottom: 20px;
     color: var(--additional-accent-color);
