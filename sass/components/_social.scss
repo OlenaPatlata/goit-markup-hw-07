@@ -1,12 +1,11 @@
 .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %center-list;
   width: 206px;
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
   &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %center-list;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -24,9 +23,6 @@
   }
 }
 
-.social__item:not(:last-child) {
-  margin-right: 10px;
-}
 .social__link--dark {
   background-color: var(--additional-icon-color-footer);
   color: var(--additional-accent-color);
